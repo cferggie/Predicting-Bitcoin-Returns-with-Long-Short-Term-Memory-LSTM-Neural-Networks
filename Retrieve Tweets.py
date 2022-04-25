@@ -10,11 +10,11 @@ import random
 
 #Twitter Access 
 
-consumer_key = 'tmFvWrc2JvyTt7K0H46OzOp6y'
-consumer_secret = 'ISI9p8wSILuWSpI6E2vUz6H0cYHUSwkwGfDVOkQ9EtKvUuKoBO'
-access_token = '1504894041544081412-pkD3SKWd0LQebfIFE4QqSd3UJ0CzIQ'
-access_token_secret = 'Vais2DY6aWxjCRsPm7xacBNbMX7fFPxyWVQVcITT5Qq82'
-bearer_token = 'AAAAAAAAAAAAAAAAAAAAAJ6CaQEAAAAAUcOj7rKXas5tVBSCKiant0H0KbY%3DQ9vHbE2ShFNrFVKxPE1Pa9Om1JMssfzBMnCxSMZx0od7JLLhvz'
+consumer_key = 'KEY HERE'
+consumer_secret = 'KEY HERE'
+access_token = 'KEY HERE'
+access_token_secret = 'KEY HERE'
+bearer_token = 'KEY HERE'
 
 #Create API for use in any function and pass AUTH
 client = tweepy.Client(consumer_key=consumer_key, consumer_secret=consumer_secret, access_token=access_token, access_token_secret=access_token_secret, bearer_token=bearer_token)
@@ -25,7 +25,7 @@ searchList = "Bitcoin" or "BitCoin" or "BTC" or "btc" or "$BTC" or "$btc" or "bi
 #Perform Search
 response = client.search_recent_tweets(query=searchList, max_results=10, tweet_fields=["created_at","text"])
 
-#Create object that holds the twitter data 
+#Grab the data from the search  
 tweets = response.data
 
 #Create a dataframe to hold tweets and save to csv
