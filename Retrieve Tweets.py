@@ -21,9 +21,11 @@ client = tweepy.Client(consumer_key=consumer_key, consumer_secret=consumer_secre
 
 #Define the search (right now it only finds 10 tweets for testing)
 searchList = "Bitcoin" or "BitCoin" or "BTC" or "btc" or "$BTC" or "$btc" or "bitcoin"
+#I might decide to filter out either retweets or replies, this is how it is done
+#newSearch = searchList + " -is:retweet" + " -is:reply"
 
 #Perform Search
-response = client.search_recent_tweets(query=searchList, max_results=10, tweet_fields=["created_at","text"])
+response = client.search_recent_tweets(query=newSearch, max_results=10, tweet_fields=["created_at","text"])
 
 #Grab the data from the search  
 tweets = response.data
