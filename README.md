@@ -3,4 +3,4 @@ This repository includes all resources regarding my research, "Predictive Abilit
 
 This was research I did for my Econometrics project during the Spring 2022 semester. I am currently in the process of making the python sentiment bot and shortly after will apply econometric methods to the data in R. First release of my results will be released at the end of April 2022.
 
-I plan on taking a deep dive into error analysis over the summer to improve text classification that will likely increase predictive power of the sentiment bot. Hopefully I can produce some sort of indicator traders can use on charting sites such as TradingView, and DEXTools.
+I plan on taking a deep dive into error analysis over the summer to improve text classification that will likely increase predictive power of the sentiment bot. Hopefully I can produce some sort of indicator traders can use on charting sites such as TradingView, and DEXTools. Also plan on cleaning up the code as I get better at python over the summer.
