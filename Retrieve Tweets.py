@@ -18,7 +18,7 @@ bearer_token = 'AAAAAAAAAAAAAAAAAAAAAJ6CaQEAAAAAUcOj7rKXas5tVBSCKiant0H0KbY%3DQ9
 #Create API for use in any function and pass AUTH
 client = tweepy.Client(consumer_key=consumer_key, consumer_secret=consumer_secret, access_token=access_token, access_token_secret=access_token_secret, bearer_token=bearer_token)
 
-#Define the search (right now it only finds 10 tweets)
+#Define the search (right now it only finds 10 tweets for testing)
 searchList = "Bitcoin" or "BitCoin" or "BTC" or "btc" or "$BTC" or "$btc" or "bitcoin"
 
 #Perform Search
