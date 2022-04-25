@@ -1,3 +1,4 @@
+##Currently in the process of creating the clean
 #Imports
 import pandas as pd
 import numpy as np
