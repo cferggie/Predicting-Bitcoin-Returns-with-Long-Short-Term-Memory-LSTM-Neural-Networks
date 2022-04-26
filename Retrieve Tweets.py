@@ -19,18 +19,18 @@ bearer_token = 'KEY HERE'
 #Create API for use in any function and pass AUTH
 client = tweepy.Client(consumer_key=consumer_key, consumer_secret=consumer_secret, access_token=access_token, access_token_secret=access_token_secret, bearer_token=bearer_token)
 
-#Define the search (right now it only finds 10 tweets for testing)
+#Define the search 
 searchList = "Bitcoin" or "BitCoin" or "BTC" or "btc" or "$BTC" or "$btc" or "bitcoin"
 newSearch = searchList + ' lang:en' #gets tweets in english only
 
 #Perform Search
-response = client.search_recent_tweets(query=newSearch, max_results=10, tweet_fields=["created_at","text"])
+response = client.search_recent_tweets(query=newSearch, max_results=100, tweet_fields=["created_at","text"])
 
 #Grab the data from the search  
 tweets = response.data
 
 #Create a dataframe to hold tweets and save to csv
 data = pd.DataFrame(data=[[tweet.created_at,tweet.text]for tweet in tweets], columns=['Date','Tweets'])
-data.to_csv("CBT.csv")
+data.to_csv("Preprocessed Tweets.csv", index=False)
 
 
