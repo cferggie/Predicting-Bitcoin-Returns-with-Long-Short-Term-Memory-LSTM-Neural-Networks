@@ -1,4 +1,3 @@
-##This is the trial program, will update the amount of tweets it searches once the whole bot is built
 #Imports
 
 import re
