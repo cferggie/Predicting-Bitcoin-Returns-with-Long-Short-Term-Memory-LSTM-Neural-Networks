@@ -3,12 +3,8 @@ import pandas as pd
 import numpy as np
 import re
 import string
-import nltk
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
-from nltk.stem.porter import *
-from nltk.stem.wordnet import WordNetLemmatizer
 
+##This is all the preprocessing that is required before using VADER. Anything more does more harm than good in terms of having the most unbiased data. 
 
 #Read in Preprocessed tweets
 tweets = pd.read_csv('Preprocessed.csv')
@@ -31,4 +27,3 @@ def cleanTxt(text):
 #Clean the text
 tweets['Tweets'] = tweets['Tweets'].apply(cleanTxt)
        
-
