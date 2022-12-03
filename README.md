@@ -5,4 +5,4 @@ This was research I did for my Econometrics project during the Spring 2022 semes
 
 I plan on taking a deep dive into error analysis over the summer to improve text classification that will likely increase predictive power of the sentiment bot. Hopefully I can produce some sort of indicator traders can use on charting sites such as TradingView, and DEXTools. Also plan on cleaning up the code as I get better at python over the summer.
 
-Update 5/3/2022: My results are currently being reviewed by my professor and will be posted once I meet with them this week. The sentiment part will have to wait as my AWS server collects data daily, because my academic permissions for doing a full search with the Twitter API got denied. This server will collect data for about 3-6 months in order for my estimators to be as efficient as possible. 
+Update 5/3/2022: The sentiment part will have to wait as my AWS server collects data daily, because my academic permissions for doing a full search with the Twitter API got denied. This server will collect data for about 3-6 months in order for my estimators to be as efficient as possible. 
