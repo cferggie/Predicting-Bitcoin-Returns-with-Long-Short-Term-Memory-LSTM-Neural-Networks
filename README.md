@@ -1,6 +1,8 @@
 # Predictive Ability of Sentiment and Various Features on Cryptocurrency Prices
-This repository includes all resources regarding my research, "Predictive Ability of Sentiment and Various Features on Cryptocurrency Prices" (working title). This paper reviews the ability to predict Bitcoin price using sentiment analysis of tweets and other features such as block size, cost per TX, hash rate, etc.
+This repository includes all resources regarding my research, "Predictive Ability of Sentiment and Various Features on Cryptocurrency Prices" (working title). This paper was inspired by reading this paper (https://cs229.stanford.edu/proj2015/029_report.pdf). In this paper the authors performed sentiment analysis on tweets to gain an edge in the crypto market which we thought was interesting. However, the the authors mentioned that future research could expand on error analysis in order to better classify tweets. Come 2022, OpenAI gives open access to its sentiment analysis API, GPT-3 which is superior to prior language models. This begs the question, can GPT-3 improve our ability to analyize text? If so, can our model outperform previous sentiment analysis trading models? 
 
-I plan on taking a deep dive into error analysis to improve text classification that will likely increase predictive power of the sentiment bot. Also plan on cleaning up the code as I get better at python over time.
+We might explore some other topics (working that out right now):
+- GARCHA
+- ARIMA
 
-Update 1/20/2023: This project has been on the backburner until now, because I did not have the proper access to the Twitter data due to my account restrictions. However, my restrictions have been lifted and the project will resume with my partner Stefan, under the guidance from our professor. 
+The final draft of this research will be submitted late April or early May 2023. However, there will be an update in the summer of 2023 to expand the tweet sample to 3 months worth of tweets and will use the GPT-4 model once it is released. 
