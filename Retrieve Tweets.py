@@ -34,9 +34,9 @@ def getTweets(client):
 
     return tweets
 
-#Create a loop to grab 6000 tweets per hour starting at 6:00am
+#Create a loop to grab 6000 tweets per hour starting at 9:00am
 currentTime = datetime.datetime.now(timezone('EST')).time()
-startTime = datetime.time(6,0) #6am start time
+startTime = datetime.time(9,0) #9am start time
 
 def scrapeLoop(startTime, currentTime):
   ''' 
@@ -53,7 +53,7 @@ def scrapeLoop(startTime, currentTime):
 
         # Start an infinite loop to fetch new tweets
         while True:
-            if currentTime < startTime or currentTime > datetime.time(18,0): # when to stop the infinite loop
+            if currentTime < startTime or currentTime > datetime.time(17,0): # when to stop the infinite loop
                 break
 
             try:
