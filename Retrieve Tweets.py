@@ -71,5 +71,5 @@ def scrapeLoop(startTime, currentTime):
                 print(f'Error: {e}')
                 continue
 
-scrapeLoop(startTime, currentTime) #Start grabbing tweets!!!
+scrapeLoop(startTime, currentTime) #Start grabbing tweets!!
 
