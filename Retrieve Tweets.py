@@ -1,11 +1,9 @@
 #Imports
-
-import re
 import tweepy
 import csv
-import numpy as np
-import pandas as pd
-import random
+import time
+import datetime
+from pytz import timezone
 
 #Twitter Access 
 
@@ -18,18 +16,60 @@ bearer_token = 'KEY HERE'
 #Create API for use in any function and pass AUTH
 client = tweepy.Client(consumer_key=consumer_key, consumer_secret=consumer_secret, access_token=access_token, access_token_secret=access_token_secret, bearer_token=bearer_token)
 
-#Define the search 
-searchList = "Bitcoin" or "BitCoin" or "BTC" or "btc" or "$BTC" or "$btc" or "bitcoin"
-newSearch = searchList + ' lang:en' #gets tweets in english only
+def getTweets(client):
+  ''' 
+  This function will the scrape Twitter to retrieve the most recent tweets mentioning bitcoin and its various other nicknames. 
+  The scrape will exclude any non-english tweets, retweets, or replies.
+  '''
+  
+    #Define the search 
+    searchList = "Bitcoin" or "BitCoin" or "BTC" or "btc" or "$BTC" or "$btc" or "bitcoin"
+    newSearch = searchList + ' lang:en' + ' -is:retweet' + ' -is:reply'  #additional search filters
+ 
+    #Perform Search
+    response = client.search_recent_tweets(query=newSearch, max_results=100, tweet_fields=["created_at","text"])
 
-#Perform Search
-response = client.search_recent_tweets(query=newSearch, max_results=100, tweet_fields=["created_at","text"])
+    #Grab the data from the search  
+    tweets = response.data
 
-#Grab the data from the search  
-tweets = response.data
+    return tweets
 
-#Create a dataframe to hold tweets and save to csv
-data = pd.DataFrame(data=[[tweet.created_at,tweet.text]for tweet in tweets], columns=['Date','Tweets'])
-data.to_csv("Preprocessed Tweets.csv", index=False)
+#Create a loop to grab 6000 tweets per hour starting at 6:00am
+currentTime = datetime.datetime.now(timezone('EST')).time()
+startTime = datetime.time(6,0) #6am start time
 
+def scrapeLoop(startTime, currentTime):
+  ''' 
+  This function takes the current time and a designated start time (both in EST) to determine when start scrapping Twitter for tweets.
+  You can change the start time using the startTime variable above.
+  '''
+  
+    #Open a csv file to write tweets to 
+    with open('tweets.csv', 'w', newline='', encoding='utf-8') as csvfile:
+        writer = csv.writer(csvfile)
+
+        # Write the header row to the CSV file
+        writer.writerow(['created_at', 'text'])
+
+        # Start an infinite loop to fetch new tweets
+        while True:
+            if currentTime < startTime or currentTime > datetime.time(18,0): # when to stop the infinite loop
+                break
+
+            try:
+                #save tweets in an object from the getTweets function
+                tweets = getTweets(client)
+
+                #write each tweet to a csv
+                for tweet in tweets:
+                    writer.writerow([tweet.created_at, tweet.text])
+                
+                #wait for 60 seconds before searching again
+                time.sleep(60)
+
+            except tweepy.errors as e:
+                print(f'Error: {e}')
+                continue
+
+scrapeLoop(startTime, currentTime) #Start grabbing tweets!!!
 
