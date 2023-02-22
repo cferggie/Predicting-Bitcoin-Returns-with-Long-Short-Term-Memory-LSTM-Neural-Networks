@@ -35,17 +35,13 @@ def getTweets(client):
     return tweets
 
 #Create a loop to grab 6000 tweets per hour starting at 9:00am
-currentTime = datetime.datetime.now(timezone('EST')).time()
 startTime = datetime.time(9,0) #9am start time
+stopTime = datetime.time(17 ,0) #5pm stop time
 
-def scrapeLoop(startTime, currentTime):
-  ''' 
-  This function takes the current time and a designated start time (both in EST) to determine when start scrapping Twitter for tweets.
-  You can change the start time using the startTime variable above.
-  '''
-  
+def scrapeLoop(startTime,stopTime):
+
     #Open a csv file to write tweets to 
-    with open('tweets.csv', 'w', newline='', encoding='utf-8') as csvfile:
+    with open('tweets2.csv', 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
 
         # Write the header row to the CSV file
@@ -53,8 +49,12 @@ def scrapeLoop(startTime, currentTime):
 
         # Start an infinite loop to fetch new tweets
         while True:
-            if currentTime < startTime or currentTime > datetime.time(17,0): # when to stop the infinite loop
-                break
+            #Initialize current time for checking 
+            currentTime = datetime.datetime.now(timezone('EST')).time()
+
+            if currentTime < startTime or currentTime > stopTime: # when to stop the infinite loop
+                print('It is not time yet')
+                break    
 
             try:
                 #save tweets in an object from the getTweets function
@@ -64,12 +64,12 @@ def scrapeLoop(startTime, currentTime):
                 for tweet in tweets:
                     writer.writerow([tweet.created_at, tweet.text])
                 
-                #wait for 60 seconds before searching again
-                time.sleep(60)
+                #wait for 50 seconds before searching again
+                time.sleep(50) #i really want it to be a minute, but i reduced it to 50sec to give the 
+                                # program time to do the search
 
             except tweepy.errors as e:
                 print(f'Error: {e}')
                 continue
 
-scrapeLoop(startTime, currentTime) #Start grabbing tweets!!!
-
+scrapeLoop(startTime, stopTime)
