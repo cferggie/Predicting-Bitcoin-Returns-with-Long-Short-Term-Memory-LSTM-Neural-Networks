@@ -18,16 +18,16 @@ client = tweepy.Client(consumer_key=consumer_key, consumer_secret=consumer_secre
 
 def getTweets(client):
   ''' 
-  This function will the scrape Twitter to retrieve the most recent tweets mentioning bitcoin and its various other nicknames. 
+  This function will the scrape Twitter to retrieve the most recent tweets mentioning bitcoin. 
   The scrape will exclude any non-english tweets, retweets, or replies.
   '''
   
     #Define the search 
-    searchList = "Bitcoin" or "BitCoin" or "BTC" or "btc" or "$BTC" or "$btc" or "bitcoin"
-    newSearch = searchList + ' lang:en' + ' -is:retweet' + ' -is:reply'  #additional search filters
+    searchWord = "Bitcoin"
+    searchParam = searchList + ' lang:en' + ' -is:retweet' + ' -is:reply' 
  
     #Perform Search
-    response = client.search_recent_tweets(query=newSearch, max_results=100, tweet_fields=["created_at","text"])
+    response = client.search_recent_tweets(query=searchParam, max_results=100, tweet_fields=["created_at","text"])
 
     #Grab the data from the search  
     tweets = response.data
