@@ -3,4 +3,4 @@ This repository includes all resources regarding my partner and I's research, "P
 
 3/22/23: Our goal was to use ChatGPT to determine sentiment. The OpenAi api is more expensive than I thought it was lol. However, we will use VADER sentiment analysis instead and compare those sentiment scores to ChatGPT for 4,000 tweets to determine how good VADER really is.
 
-The final draft of this research will be submitted late April or early May 2023. However, there will be an update in the summer of 2023 to expand the tweet sample to 3 months worth of tweets and will use the GPT-4 model once it is released. 
+The final draft of this research will be submitted late April or early May 2023. However, there will be an update in the summer of 2023 to expand the tweet sample to 3 months worth of tweets. 
