@@ -1,4 +1,0 @@
-I spent about 15min to decide when to run the Twitter scrape and decided the scrape should run from 9am to 5pm. 
-There is evidence that shows that the crypto markets are most active between 9am and 4pm which coincide with the New York Stock Exchange. I decided to let the scrape run 
-until 5pm to catch asset exchanges following the NYSE close at 4pm. 
-https://www.coindesk.com/learn/is-there-a-best-time-to-trade-crypto-heres-what-the-data-says/
