@@ -5,4 +5,4 @@ Abstract – Forecasting time series data is a topic of ongoing interest in fina
 
 ****The paper itself is currently going through edits before publishing. 
 
-****For employers: I have the rough draft of the code here. However, all parts of this research will be subject to edits. I have been tweaking the lstm and arima code with direction from my professor to get the optimal solution. 
+****For employers: I have the rough draft of the code and paper here. However, all parts of this research will be subject to edits. I have been tweaking the lstm and arima code with direction from my professor to get the optimal solution. 
