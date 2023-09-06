@@ -5,5 +5,5 @@ Implement the following:
 
 
 ps: inital RMSE from LSTM
-    train = 0.0056
-    validation = 0.0433
+    train = 0.0066
+    validation = 0.0436
