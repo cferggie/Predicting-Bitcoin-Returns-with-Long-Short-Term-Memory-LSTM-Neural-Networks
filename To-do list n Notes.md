@@ -1,4 +1,5 @@
 Implement the following:
+- fixing regularization loop
 - training size optimization
 - compare results to baseline performance (ARIMA, random walk simulation)
 - 
