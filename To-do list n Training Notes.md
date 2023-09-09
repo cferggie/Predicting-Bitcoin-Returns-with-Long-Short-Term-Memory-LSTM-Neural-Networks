@@ -21,4 +21,5 @@ Training notes
         - looped through lambda values from 0.10 to 1 and found that 0.10 led to the smallest validation RMSE
         - noticed that the predictions were a straight line. Lambda too high?
         - lambda was too high (suggests underfitting)
+        - 0.0000001 seems to be small enough to get the model out of the underfitting rut
         
