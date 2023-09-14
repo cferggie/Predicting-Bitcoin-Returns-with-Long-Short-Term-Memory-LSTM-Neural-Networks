@@ -19,4 +19,5 @@ Training notes
         - lambda was too high (suggests underfitting)
         - 0.0000001 seems to be small enough to get the model out of the underfitting rut
         - anything larger than 0.0000005 will lead to straight line predictions
+        - current loss found in regularization notes seems to be the minimum loss given by regularization
         

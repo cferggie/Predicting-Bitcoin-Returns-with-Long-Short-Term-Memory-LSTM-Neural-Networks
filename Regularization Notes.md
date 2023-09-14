@@ -1,7 +1,7 @@
 Lambda, RMSE Scores:
 
-Current: 0.0000001,  train RMSE 0.0369, validation RMSE 0.0294
-Chosen:  0.00000004, train RMSE 0.0368, validation RMSE 0.0293
+Chosen: 0.0000001,  train RMSE 0.0369, validation RMSE 0.0294
+
 
 Code to find lambda:
 
