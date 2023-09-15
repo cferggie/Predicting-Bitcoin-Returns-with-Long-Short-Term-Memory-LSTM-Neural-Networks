@@ -1,6 +1,5 @@
 Implement the following:
-- optimize lambda
-- training size optimization
+- hyperparameter optimization (learn to automate this process eventually)
 - compare results to baseline performance (ARIMA, random walk simulation)
 
 OG Scores from paper: 
@@ -8,7 +7,7 @@ OG Scores from paper:
     ARIMA    0.0355      0.0292
     LSTM     0.0056      0.0365
 
-Inital RMSE from LSTM:
+Inital RMSE from LSTM (once seed is added):
     train = 0.0066
     validation = 0.0436
 
@@ -21,9 +20,7 @@ Training notes
         - anything larger than 0.0000005 will lead to straight line predictions
         - current loss found in regularization notes seems to be the minimum loss given by regularization
     Lookback:
-        - 1, train RMSE 0.0363, validation RMSE 0.0280
-        - 2, train RMSE 0.0364, validation RMSE 0.0280
-        - 3, train RMSE 0.0365, validation RMSE 0.0279 *******
+
         - 4, train RMSE 0.0364, validation RMSE 0.0281 
         - 5, train RMSE 0.0366, validation RMSE 0.0281
         - 6, train RMSE 0.0367, validation RMSE 0.0281
@@ -31,4 +28,20 @@ Training notes
         - 8, train RMSE 0.0365, validation RMSE 0.0289
         - 9, train RMSE 0.0364, validation RMSE 0.0294
         - 10, train RMSE 0.0369, validation RMSE 0.0294
+        - 11, train RMSE 0.0369, validation RMSE 0.0295
+        - 12, train RMSE 0.0370, validation RMSE 0.0265
+        - 13, train RMSE 0.0371, validation RMSE 0.0265
+        - 14, train RMSE 0.0371, validation RMSE 0.0267
+        - 15, train RMSE 0.0372, validation RMSE 0.0269
+        - 20, train RMSE 0.0368, validation RMSE 0.0267 **Increasing seems to reduce RMSE for some reason
+        - 25, train RMSE 0.0370, validation RMSE 0.0272 
+        - 30, train RMSE 0.0375, validation RMSE 0.0275
+        - 40, train RMSE 0.0374, validation RMSE 0.0188
+
+        *Anything below 10 leads to non-convergence
+        *Technically increasing the lookback reduces the training set that is predict on
+    Hidden Size:
+        - 60, train RMSE 0.0365, validation RMSE 0.0279
+        - 70, train RMSE 0.0365, validation RMSE 0.0279
+        - 
         
