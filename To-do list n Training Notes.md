@@ -20,4 +20,15 @@ Training notes
         - 0.0000001 seems to be small enough to get the model out of the underfitting rut
         - anything larger than 0.0000005 will lead to straight line predictions
         - current loss found in regularization notes seems to be the minimum loss given by regularization
+    Lookback:
+        - 1, train RMSE 0.0363, validation RMSE 0.0280
+        - 2, train RMSE 0.0364, validation RMSE 0.0280
+        - 3, train RMSE 0.0365, validation RMSE 0.0279 *******
+        - 4, train RMSE 0.0364, validation RMSE 0.0281 
+        - 5, train RMSE 0.0366, validation RMSE 0.0281
+        - 6, train RMSE 0.0367, validation RMSE 0.0281
+        - 7, train RMSE 0.0366, validation RMSE 0.0284
+        - 8, train RMSE 0.0365, validation RMSE 0.0289
+        - 9, train RMSE 0.0364, validation RMSE 0.0294
+        - 10, train RMSE 0.0369, validation RMSE 0.0294
         
