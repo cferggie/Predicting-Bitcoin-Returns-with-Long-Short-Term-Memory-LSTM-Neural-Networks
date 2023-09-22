@@ -23,7 +23,7 @@ Training notes
     Lookback:
         - 10, train RMSE 0.0369, validation RMSE 0.0294
         - 11, train RMSE 0.0369, validation RMSE 0.0295
-        - 12, train RMSE 0.0370, validation RMSE 0.0265
+        - 12, train RMSE 0.0370, validation RMSE 0.0265 *Chosen level
         - 13, train RMSE 0.0371, validation RMSE 0.0265
         - 14, train RMSE 0.0371, validation RMSE 0.0267
         - 15, train RMSE 0.0372, validation RMSE 0.0269
@@ -33,9 +33,18 @@ Training notes
         - 40, train RMSE 0.0374, validation RMSE 0.0188
 
         *Anything below 10 leads to non-convergence
+        *I do worry that as the lookback size gets bigger, the number of predictions the model makes is lower. Is this something to consider?
 
     Hidden Size:
-        - 60, train RMSE 0.0365, validation RMSE 0.0279
-        - 70, train RMSE 0.0365, validation RMSE 0.0279
-        - 
+        - 10, train RMSE 0.0371, validation RMSE 0.0266 *Chosen size
+        - 20, train RMSE 0.0371, validation RMSE 0.0267
+        - 30, train RMSE 0.0371, validation RMSE 0.0266
+        - 40, train RMSE 0.0371, validation RMSE 0.0267
+        - 50, train RMSE 0.0371, validation RMSE 0.0267
+        - 60, train RMSE 0.0371, validation RMSE 0.0267
+        - 70, train RMSE 0.0371, validation RMSE 0.0267
+        - 80, train RMSE 0.0371, validation RMSE 0.0267
+        - 90, train RMSE 0.0371, validation RMSE 0.0267
+        - 100, train RMSE 0.0371, validation RMSE 0.0267
+        - 200, train RMSE 0.0371, validation RMSE 0.0267
         
