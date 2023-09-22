@@ -1,6 +1,7 @@
 Implement the following:
 - hyperparameter optimization (learn to automate this process eventually)
 - compare results to baseline performance (ARIMA, random walk simulation)
+- multiply log-diff by 100 to get % change
 
 OG Scores from paper: 
     Model  Train RMSE  Test RMSE
