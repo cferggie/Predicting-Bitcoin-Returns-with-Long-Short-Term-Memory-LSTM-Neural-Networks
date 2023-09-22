@@ -20,13 +20,6 @@ Training notes
         - anything larger than 0.0000005 will lead to straight line predictions
         - current loss found in regularization notes seems to be the minimum loss given by regularization
     Lookback:
-
-        - 4, train RMSE 0.0364, validation RMSE 0.0281 
-        - 5, train RMSE 0.0366, validation RMSE 0.0281
-        - 6, train RMSE 0.0367, validation RMSE 0.0281
-        - 7, train RMSE 0.0366, validation RMSE 0.0284
-        - 8, train RMSE 0.0365, validation RMSE 0.0289
-        - 9, train RMSE 0.0364, validation RMSE 0.0294
         - 10, train RMSE 0.0369, validation RMSE 0.0294
         - 11, train RMSE 0.0369, validation RMSE 0.0295
         - 12, train RMSE 0.0370, validation RMSE 0.0265
@@ -39,7 +32,7 @@ Training notes
         - 40, train RMSE 0.0374, validation RMSE 0.0188
 
         *Anything below 10 leads to non-convergence
-        *Technically increasing the lookback reduces the training set that is predict on
+
     Hidden Size:
         - 60, train RMSE 0.0365, validation RMSE 0.0279
         - 70, train RMSE 0.0365, validation RMSE 0.0279
