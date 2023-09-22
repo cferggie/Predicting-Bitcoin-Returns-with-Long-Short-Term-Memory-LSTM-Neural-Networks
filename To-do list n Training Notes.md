@@ -47,4 +47,11 @@ Training notes
         - 90, train RMSE 0.0371, validation RMSE 0.0267
         - 100, train RMSE 0.0371, validation RMSE 0.0267
         - 200, train RMSE 0.0371, validation RMSE 0.0267
+    
+    Number of layers:
+    - 1, train RMSE 0.0369, validation RMSE 0.0265 *Num of layers selected
+    - 2, train RMSE 0.0369, validation RMSE 0.0265
+    - 3, train RMSE 0.0370, validation RMSE 0.0272
+    - 4, DOESNT WORK
+    - 5, DOESNT WORK
         
