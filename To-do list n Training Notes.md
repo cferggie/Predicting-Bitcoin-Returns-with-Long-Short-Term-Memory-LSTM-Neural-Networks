@@ -36,6 +36,19 @@ Training notes
         *I do worry that as the lookback size gets bigger, the number of predictions the model makes is lower. Is this something to consider?
 
     Hidden Size:
+        - 1, train RMSE 0.0369, validation RMSE 0.0264 **********
+             train RMSE 0.0371, validation RMSE 0.0263
+             train RMSE 0.0370, validation RMSE 0.0262
+             train RMSE 0.0370, validation RMSE 0.0264
+
+        - 2, train RMSE 0.0369, validation RMSE 0.0268 (straight line basically, until epoch was increased to 1000)
+        - 3, train RMSE 0.0372, validation RMSE 0.0266
+        - 4, train RMSE 0.0371, validation RMSE 0.0267
+        - 5, train RMSE 0.0369, validation RMSE 0.0267
+        - 6, train RMSE 0.0369, validation RMSE 0.0265
+        - 7, train RMSE 0.0369, validation RMSE 0.0266
+        - 8, train RMSE 0.0369, validation RMSE 0.0265
+        - 9, train RMSE 0.0369, validation RMSE 0.0266
         - 10, train RMSE 0.0371, validation RMSE 0.0266 *Chosen size
         - 20, train RMSE 0.0371, validation RMSE 0.0267
         - 30, train RMSE 0.0371, validation RMSE 0.0266
