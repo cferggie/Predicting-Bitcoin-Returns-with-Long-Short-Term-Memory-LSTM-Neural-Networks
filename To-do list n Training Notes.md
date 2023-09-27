@@ -51,7 +51,7 @@ Training notes
         - 7, train RMSE 0.0369, validation RMSE 0.0266
         - 8, train RMSE 0.0369, validation RMSE 0.0265
         - 9, train RMSE 0.0369, validation RMSE 0.0266
-        - 10, train RMSE 0.0371, validation RMSE 0.0266 *Chosen size
+        - 10, train RMSE 0.0371, validation RMSE 0.0266 
         - 20, train RMSE 0.0371, validation RMSE 0.0267
         - 30, train RMSE 0.0371, validation RMSE 0.0266
         - 40, train RMSE 0.0371, validation RMSE 0.0267
