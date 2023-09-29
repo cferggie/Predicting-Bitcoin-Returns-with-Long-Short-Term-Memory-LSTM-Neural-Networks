@@ -31,6 +31,8 @@ Training notes
         - increasing to 2000 resulted in a better fit. Let's keep increasing and reassess.
         - increasing to 3000 resulted in a better fit. Let's keep increasing and reassess. 
             - train RMSE 0.0364, validation RMSE 0.0173, test RMSE 0.0171 
+        - 5000, visually, seems to be little improvement
+            - train RMSE 0.0364, validation RMSE 0.0174, test RMSE 0.0171
     Batch size:
         - Started with 30 (small size)
             train RMSE 0.0365, validation RMSE 0.0172
