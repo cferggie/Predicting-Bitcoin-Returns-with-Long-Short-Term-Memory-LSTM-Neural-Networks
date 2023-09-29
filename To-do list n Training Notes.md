@@ -41,12 +41,7 @@ Training notes
         - 200, seems to have high bias aka underfitting
         - 300, no improvement in underfitting. 
     Regularization:
-        - 0.01, suffers from high bias/underfitting 
-        - 0.001, high bias persits
-        - 0.0001, high bias persists
-        - 0.0000001, high bias persists, but making lambda smaller reduces this issue. 
-        - 0.0000000001, smaller
-        - 0.00000000001, 
+        - not needed
     
     Lookback:
 
