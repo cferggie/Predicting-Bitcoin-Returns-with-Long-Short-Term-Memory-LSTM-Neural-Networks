@@ -23,6 +23,14 @@ Starting Hyper Parameters:
 
 
 Training notes
+    Issues: the rmse is misleading at times. The rmse will display a score of 0.363 for example, but the prediction will be a straight line         indicating high bias
+
+
+    Epochs:
+        - at 1000 epochs the model suffers from high bias/underfitting, therefore I will increase the number of epochs to increase the amount of training
+        - increasing to 2000 resulted in a better fit. Let's keep increasing and reassess.
+        - increasing to 3000 resulted in a better fit. Let's keep increasing and reassess. 
+            - train RMSE 0.0364, validation RMSE 0.0173, test RMSE 0.0171 
     Batch size:
         - Started with 30 (small size)
             train RMSE 0.0365, validation RMSE 0.0172
