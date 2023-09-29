@@ -28,18 +28,25 @@ Training notes
 
     Epochs:
         - at 1000 epochs the model suffers from high bias/underfitting, therefore I will increase the number of epochs to increase the amount of training
-        - increasing to 2000 resulted in a better fit. Let's keep increasing and reassess.
-        - increasing to 3000 resulted in a better fit. Let's keep increasing and reassess. 
-            - train RMSE 0.0364, validation RMSE 0.0173, test RMSE 0.0171 
+        - 2000 resulted in a better fit. Let's keep increasing and reassess.
+        - 3000 resulted in a better fit. Let's keep increasing and reassess. 
+            - train RMSE 0.0364, validation RMSE 0.0173, test RMSE 0.0171
+        - 4000 resulted in little improvement
+            - train RMSE 0.0365, validation RMSE 0.0172, test RMSE 0.0172 
         - 5000, visually, seems to be little improvement
             - train RMSE 0.0364, validation RMSE 0.0174, test RMSE 0.0171
     Batch size:
         - Started with 30 (small size)
-            train RMSE 0.0365, validation RMSE 0.0172
         - 80, train RMSE 0.0365, validation RMSE 0.0172 (no difference)
         - 200, seems to have high bias aka underfitting
         - 300, no improvement in underfitting. 
     Regularization:
+        - 0.01, suffers from high bias/underfitting 
+        - 0.001, high bias persits
+        - 0.0001, high bias persists
+        - 0.0000001, high bias persists, but making lambda smaller reduces this issue. 
+        - 0.0000000001, smaller
+        - 0.00000000001, 
     
     Lookback:
 
