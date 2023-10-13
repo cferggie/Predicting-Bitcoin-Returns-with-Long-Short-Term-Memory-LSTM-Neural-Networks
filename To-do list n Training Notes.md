@@ -33,8 +33,20 @@ Training notes
     
     Lookback:
     - 1, severe high bias
-    - 2, 
-
+    - 2, high bias persists
+    - 5, high bias
+    - 8, 
+        train RMSE 0.0314, validation RMSE 0.0190, test RMSE 0.0204
+    - 9, 
+        train RMSE 0.0320, validation RMSE 0.0190, test RMSE 0.0189
+    - 11, 
+        train RMSE 0.0320, validation RMSE 0.0190, test RMSE 0.0189
+    - 12, ****
+      train RMSE 0.0328, validation RMSE 0.0175, test RMSE 0.0178
+    - 13, 
+        train RMSE 0.0328, validation RMSE 0.0175, test RMSE 0.0178
+    - 14, 
+        train RMSE 0.0321, validation RMSE 0.0182, test RMSE 0.0198
 
     Hidden Size:
         - 1: underfit/high bias
