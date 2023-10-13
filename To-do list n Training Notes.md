@@ -2,7 +2,6 @@ Implement the following:
 - hyperparameter optimization (learn to automate this process eventually)
 - compare results to baseline performance (ARIMA, random walk simulation)
 
-*There was a lot of work done, but i noticed the code was a bit messy and so I am redoing my approach to optimization that I previously had implemented
 
 OG Scores from paper: 
     Model  Train RMSE  Test RMSE
