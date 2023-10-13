@@ -19,7 +19,7 @@ Starting Hyper Parameters:
 - Num layers = 1
 - Epochs = 1000
 - Batch Size = 30
-- Training Size = 80%
+- Training Size = 70%
 
 
 Training notes
@@ -27,19 +27,7 @@ Training notes
 
 
     Epochs:
-        - at 1000 epochs the model suffers from high bias/underfitting, therefore I will increase the number of epochs to increase the amount of training
-        - 2000 resulted in a better fit. Let's keep increasing and reassess.
-        - 3000 resulted in a better fit. Let's keep increasing and reassess. 
-            - train RMSE 0.0364, validation RMSE 0.0173, test RMSE 0.0171
-        - 4000 resulted in little improvement
-            - train RMSE 0.0365, validation RMSE 0.0172, test RMSE 0.0172 
-        - 5000, visually, seems to be little improvement
-            - train RMSE 0.0364, validation RMSE 0.0174, test RMSE 0.0171
     Batch size:
-        - Started with 30 (small size)
-        - 80, train RMSE 0.0365, validation RMSE 0.0172 (no difference)
-        - 200, seems to have high bias aka underfitting
-        - 300, no improvement in underfitting. 
     Regularization:
         - not needed
     
@@ -47,6 +35,18 @@ Training notes
 
 
     Hidden Size:
+        - 1: underfit/high bias
+        - 10: underfit/high bias
+        - 20: underfit/high bias
+            train RMSE 0.0358, validation RMSE 0.0177, test RMSE 0.0173
+        - 30: 
+            train RMSE 0.0328, validation RMSE 0.0175, test RMSE 0.0178
+        - 40: 
+            train RMSE 0.0231, validation RMSE 0.0287, test RMSE 0.0320
+        - 50: 
+            train RMSE 0.0288, validation RMSE 0.0178, test RMSE 0.0231
+        - 60: 
+            train RMSE 0.0237, validation RMSE 0.0210, test RMSE 0.0276
 
     Number of layers:
 
