@@ -32,6 +32,8 @@ Training notes
         - not needed
     
     Lookback:
+    - 1, severe high bias
+    - 2, 
 
 
     Hidden Size:
@@ -39,7 +41,7 @@ Training notes
         - 10: underfit/high bias
         - 20: underfit/high bias
             train RMSE 0.0358, validation RMSE 0.0177, test RMSE 0.0173
-        - 30: 
+        - 30: ****LOWEST VALIDATION SCORE
             train RMSE 0.0328, validation RMSE 0.0175, test RMSE 0.0178
         - 40: 
             train RMSE 0.0231, validation RMSE 0.0287, test RMSE 0.0320
@@ -47,6 +49,20 @@ Training notes
             train RMSE 0.0288, validation RMSE 0.0178, test RMSE 0.0231
         - 60: 
             train RMSE 0.0237, validation RMSE 0.0210, test RMSE 0.0276
+        - 70:
+           train RMSE 0.0219, validation RMSE 0.0228, test RMSE 0.0324 
+        - 80:
+            train RMSE 0.0167, validation RMSE 0.0264, test RMSE 0.0312
+        - 90:
+            train RMSE 0.0211, validation RMSE 0.0247, test RMSE 0.0305
+        - 100:
+            train RMSE 0.0119, validation RMSE 0.0395, test RMSE 0.0329
+        - 110:
+            train RMSE 0.0193, validation RMSE 0.0195, test RMSE 0.0318
+        - 120:
+            train RMSE 0.0036, validation RMSE 0.0280, test RMSE 0.0409
+
+
 
     Number of layers:
 
