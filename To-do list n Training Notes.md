@@ -12,6 +12,9 @@ Inital RMSE from LSTM (once seed is added):
     train = 0.0066
     validation = 0.0436
 
+Final RMSE from LSTM (after optimization):
+- train RMSE 0.0328, validation RMSE 0.0175, test RMSE 0.0178
+
 Starting Hyper Parameters:
 - Lookback = 12
 - Hidden size = 1
@@ -72,9 +75,5 @@ Training notes
             train RMSE 0.0193, validation RMSE 0.0195, test RMSE 0.0318
         - 120:
             train RMSE 0.0036, validation RMSE 0.0280, test RMSE 0.0409
-
-
-
-    Number of layers:
 
         
